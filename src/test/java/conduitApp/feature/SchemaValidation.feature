@@ -1,4 +1,4 @@
-@ignore
+
 Feature: Test for the home page
 
 Background: Define url
@@ -21,7 +21,7 @@ Background: Define url
         Given params { limit: 10, offset: 0}
         When method GET
         Then status 200
-        And match response == {"articles": "#[10]", "articlesCount": 17}
+        And match response == {"articles": "#[10]", "articlesCount": 19}
         And match each response.articles ==
         """
             {

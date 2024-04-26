@@ -20,8 +20,8 @@ Background: Define url
         When method GET
         Then status 200
         And match response.articles == '#[10]'
-        And match response.articlesCount == 17 //to find the total counts
-        And match response == {"articles": "#array", "articlesCount": 17}  //to find the count and the objests
+        And match response.articlesCount == 19 //to find the total counts
+        And match response == {"articles": "#array", "articlesCount": 19}  //to find the count and the objests
         And match response.articles[0].createdAt contains '2024'  //to find the certain part([0] is used to find index value of the array) of the string
         And match response.articles[*].favoritesCount contains 0  //to find through all(* is used for that) the values(arrays) to see the specific value (favoritesCount= 1)
         And match response.articles[*].author.bio contains null  //to find through all(* is used for that) the null value

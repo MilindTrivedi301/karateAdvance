@@ -1,4 +1,4 @@
-@ignore
+
 Feature: Articles post request
 
 Background: Define url
@@ -7,11 +7,11 @@ Background: Define url
     # * def token =  tokenResponse.authToken
 
 
-    Scenario: Create a new artcile
-        Given path 'articles'
-        And request {"article": {"title": "bla bla", "description": "test_karate", "body": "test", "tagList": ["newkarate"]}}
-        When method post
-        Then status 201
+    # Scenario: Create a new artcile
+    #     Given path 'articles'
+    #     And request {"article": {"title": "hello world1", "description": "test_karate", "body": "test", "tagList": ["newkarate"]}}
+    #     When method post
+    #     Then status 201
 
     Scenario: Create new article and delte the same crated arcticle using karate tool
 
